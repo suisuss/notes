@@ -4,16 +4,17 @@
 
 #### Requirements
 
-- `unsquash`
+- `unsquashfs`
 - `tar`
-- `Docker`
+- `docker`
+- `find`
 
 #### Instructions
 
 - Go to /tmp dir and create two folders:
     - `cd /tmp && mkdir rootfs unsquashfs`
 - Mount the iso to rootfs as a loop device
-    - `sudo mount -o loop [ISO DIR] ./rootfs`
+    - `sudo mount -o loop [ISO PATH] ./rootfs`
     - What is a loop device?
 - Find the filesystem.squashfs file
     - `find . -type f | grep filesystem.squashfs`
